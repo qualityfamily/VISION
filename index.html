@@ -5,36 +5,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>クオリティファミリー VISION</title>
 <meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+  :root{
+    --gold: #c9a24b;
+    --gold-soft: #e9d19a;
+    --cream: #f3ede0;
+    --cream-soft: rgba(243,237,224,0.86);
+    --line: rgba(233,209,154,0.35);
+  }
+
   *{ box-sizing: border-box; }
 
-  body{
+  html, body{
     margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #17181c;
-    padding: 24px;
+    min-height: 100%;
   }
 
-  .frame{
-    max-width: 1100px;
-    width: 100%;
+  body{
+    color: var(--cream);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+
+    background-image:
+      linear-gradient(180deg, rgba(10,10,14,0.60) 0%, rgba(10,10,14,0.78) 40%, rgba(8,8,10,0.92) 100%),
+      url('vision.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
-  .frame img{
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  main{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 24px 90px;
+  }
+
+  h1{
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 800;
+    font-size: clamp(26px, 6.5vw, 34px);
+    color: var(--gold-soft);
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin: 0 0 20px;
+    text-shadow: 0 2px 18px rgba(0,0,0,0.55);
+  }
+
+  .quote{
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 500;
+    font-size: clamp(16px, 4.2vw, 19px);
+    text-align: center;
+    color: var(--cream);
+    line-height: 1.95;
+    margin: 0 0 44px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--line);
+    text-shadow: 0 2px 14px rgba(0,0,0,0.5);
+  }
+
+  .lead p{
+    font-size: 15.5px;
+    color: var(--cream-soft);
+    margin: 0 0 28px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.45);
+  }
+
+  .lead p:last-child{ margin-bottom: 0; }
+
+  .kagi{
+    color: var(--gold-soft);
+  }
+
+  footer.page-foot{
+    text-align: center;
+    color: var(--cream-soft);
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    padding-bottom: 48px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  @media (max-width: 480px){
+    main{ padding: 56px 20px 72px; }
+    body{ background-attachment: scroll; }
   }
 </style>
 </head>
 <body>
-  <div class="frame">
-    <img src="vision.png" alt="クオリティファミリー VISION">
-  </div>
+
+  <main>
+    <h1>クオリティファミリー VISION</h1>
+    <p class="quote">『聞こえますか私( )の声が、<br>あなたの笑顔がただ見たい・・・・』</p>
+
+    <div class="lead">
+      <p>クオリティファミリーとは、小さな心の声と向き合いながら、<span class="kagi">「愛が語られる場所」</span>ではなく、<span class="kagi">「愛が感じられる関係」</span>、<span class="kagi">「神様を教えられる家庭」</span>ではなく、<span class="kagi">「神様を感じ合える家庭」</span>を築く家族の姿です。</p>
+
+      <p>家庭という一番身近な関係の中に、安心・共感・承認・寄り添いを通して、笑顔を生み出し、一人ひとりが"感じ合う力"を取り戻していく。それが、クオリティファミリーの目指す姿です。</p>
+
+      <p>このような家族が日本中に増えたとき、心の断絶が当たり前になったこの社会に、<span class="kagi">「感じ合う心情文化」</span>が静かに広がっていきます。それは宗教や立場を越えて、人と人をつなぎ、希望を回復し、神様がともに喜ばれる"真の平和"を築いていく道を拓いていきます。</p>
+    </div>
+  </main>
+
+  <footer class="page-foot">クオリティファミリー</footer>
+
 </body>
 </html>
